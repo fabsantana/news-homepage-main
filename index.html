@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <script src="./index.js" defer></script>
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body-container p-4 lg:container" style="margin: 0 auto;">
+      <div class="nav-container flex justify-between content-center pb-6 pt-2">
+        <a href="/"><img src="./assets/images/logo.svg" alt="W logo" class="w-11 cursor-pointer"></a>
+        <nav>
+          <img class="inline-block md:hidden" src="./assets/images/icon-menu.svg" alt="">
+          <div class="nav-wrapper hidden md:flex gap-6">
+            <div>Home</div>
+            <div>New</div>
+            <div>Popular</div>
+            <div>Trending</div>
+            <div>Categories</div>
+          </div>
+        </nav>
+        <aside class="sidebar hidden">
+          <nav>
+            <div>Home</div>
+            <div>New</div>
+            <div>Popular</div>
+            <div>Trending</div>
+            <div>Categories</div>
+          </nav>
+        </aside>
+      </div>
+      <div class="md:grid grid-cols-3 grid-rows-3 md:gap-7">
+        <div class="grid-item col-start-1 col-end-3 row-start-1 row-end-2">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/images/image-web-3-mobile.jpg">
+            <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
+            <img class="pb-5" src="./assets/images/image-web-3-desktop.jpg" alt="">
+          </picture>
+        </div>
+        <div class="grid grid-cols-subgrid grid-rows-subgrid grid-item col-start-1 col-end-3 row-start-2 row-end-3">
+          <h1 class="h1 text-5xl font-extrabold pb-5 col-start-1 col-end-2">The Bright Future of Web 3.0?</h1>
+          <div class="col-start-2 col-end-3">
+            <p class="text-lg leading-7 pb-6 text-gray-400 font-light" style="color:#5E607A">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <button class="button uppercase bg-red-500 hover:bg-black text-white py-3 px-9 tracking-widest cursor-pointer" style="color:#FFFDFA">Read More</button>
+          </div>
+        </div>
+        <aside class="grid-item text-white md:m-0 my-14 col-start-3 col-span-4 row-start-1 row-end-3" style="background-color: #00001A;">
+          <div class="grid-item-wrapper px-5 py-6">
+            <h2 class="h2 text-3xl font-bold text-yellow-500">New</h2>
+            <div class="py-7">
+              <span class="font-extrabold text-xl pb-2 block">Hydrogen VS Electric Cars</span>
+              <p style="color: #C5C6CE;" class="font-normal text-base leading-6">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <hr style="border-color: #5E607A;">
+            <div class="py-7">
+              <span class="font-extrabold text-xl pb-2 block">The Downsides of AI Artistry</span>
+              <p style="color: #C5C6CE;" class="font-normal text-base leading-6">What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <hr style="border-color: #5E607A;">
+            <div class="py-7">
+              <span class="font-extrabold text-xl pb-2 block">Is VC Funding Drying Up?</span>
+              <p style="color: #C5C6CE;" class="font-normal text-base leading-6">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </div>
+        </aside>
+        <div class="grid-item col-span-3 row-start-3 row-end-4">
+          <div class="flex flex-col md:flex-row gap-7 md:gap-0">
+            <div class="flex gap-5">
+              <img class="w-28 cursor-pointer" src="./assets/images/image-retro-pcs.jpg" alt="">
+              <div class="group">
+                <span class="block font-bold text-3xl" style="color: #C5C6CE;">01</span>
+                <h2 class="font-extrabold text-lg hover:underline cursor-pointer hover:text-red-500 text-black">Reviving Retro PCs</h2>
+                <p class="text-base font-normal" style="color: #5E607A;">What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <img class="w-28 cursor-pointer" src="./assets/images/image-top-laptops.jpg" alt="">
+              <div class="group">
+                <span class="block font-bold text-3xl " style="color: #C5C6CE;">02</span>
+                <h2 class="font-extrabold text-lg hover:underline cursor-pointer hover:text-red-500 text-black">Top 10 Laptops of 2022</h2>
+                <p class="text-base font-normal" style="color: #5E607A;">Our best picks for various needs and budgets.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <img class="w-28 cursor-pointer" src="./assets/images/image-gaming-growth.jpg" alt="">
+              <div class="group">
+                <span class="block font-bold text-3xl" style="color: #C5C6CE;">03</span>
+                <h2 class="font-extrabold text-lg hover:underline cursor-pointer hover:text-red-500 text-black">The Growth of Gaming</h2>
+                <p class="text-base font-normal" style="color: #5E607A;"> How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Fabricio Santana</a>.
+    </div>
+  </body>
+</html>
